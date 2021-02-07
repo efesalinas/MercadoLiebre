@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+p {
+    font-size: 12px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #EAC926;
+    size: 100%;
+}
+
+header div.top-header {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;        
+    padding: 10px;
+}
+
+header .top-header div.logo {
+    width: 50%;
+    padding: 5px;
+}
+
+header .top-header div.form {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    padding: 5px;
+}
+header .top-header div.form div.input {
+    font-size: 12px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+header .top-header div.form .fa-search {
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+header .top-header p{
+    margin-top: 10px;
+    
+}
+
+header .fa-hand-holding-usd {
+    background-color:#EAC926 ;
+}
+header nav {
+    padding: 10px;
+    display: none;
+}
+
+header nav ul li {
+    font-size: 12px;
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+
+header div.burguer-menu {
+    text-align: center;
+
+}
+
+.fa.fa-bars.burguer {
+    color: white;
+    background-color: #03264C;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+/* MAIN */
+
+main {
+    margin: auto;
+    align-content: center;
+    
+}
+main form {
+    padding: 0px 10px;
+    margin: 10px;
+}
+
+main form div{
+    margin: auto;
+    padding: 5px 0px;
+}
+
+main form div input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: #ebebeb;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+
+main form div.botones {
+    margin: auto;
+    text-align: center
+}
+main form div.botones button {
+    width: 80%;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    background-color: #03264C;
+    color: #FFF;
+    font-weight: bold;
+    transition: background-color 450ms;
+}
+
+main form div.botones button:hover {
+    background-color:#0022AA;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 90%;
+    text-align: center;
+    background-color: white;
+    margin: 0px auto;
+    padding: 10px;
+}
+footer section i.fas.fa-credit-card,
+footer section i.fas.fa-gift,
+footer section i.fas.fa-user-shield {
+    color: #1259c3;
+    size: 2em;
+    margin-bottom: 10px;
+}
+footer section p {
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+footer section p.copyright {
+    font-size: 9px;
+    text-align: left;    
+}
+
+@media (min-width: 361px) {
+
+    header div.top-header {
+        flex-wrap: nowrap;
+        align-items: center;        
+        padding: 10px;
+    }
+    
+    header .top-header div.logo {
+        max-width: 33%;
+        padding: 5px;
+    }
+    
+    header .top-header div.form {
+        max-width: 33%;
+    }
+    
+    header nav.nav-bar {
+        display: flex;
+        justify-content:space-between ;
+    }
+    header nav.nav-bar ul{
+        display: flex;
+        justify-content:space-between ;
+    }
+    header nav.nav-bar ul li{
+        padding-right: 15px;
+    }
+
+    header div.burguer-menu {
+        display: none;    
+    }
+
+    main {
+        max-width: 400px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    
+    footer div{
+        display:flex;
+        
+    }
+
+    footer div section i.fas:hover {
+        color:#EAC926;
+        
+    }
+
+     
+}
